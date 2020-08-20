@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search by id</title>
+	<style>
+		body{
+			background-color: grey;
+		}
+		table,th,td{
+			border: 2px solid black;
+			width: 1100px;
+			background-color: lightgreen;
+		}
+		.btn{
+			width: 10%;
+			height: 5%;
+			font-size: 22px;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>User Details</h1>
+		<div class="container">
+			<form action="" method="POST">
+				
+			</form>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>FatherName</th>
+					<th>age</th>
+					<th>gender</th>
+					<th>email</th>
+					
+				</tr>
+
+				<?php
+				$connection = mysqli_connect("localhost","root","");
+				$db = mysqli_select_db($connection,'gym');
+
+				if(isset($_POST['search']))
+				{
+					$id=$_POST['id'];
+
+
+					$query="SELECT * FROM 'register' where id ='$id'";
+					$query_run = mysqli_query($connection,$query);
+
+					while($row = mysqli_fetch_array($query_run))
+					{
+						?>
+						<tr>
+							<td> <?php echo .$row['name']; ?></td>
+							<td> <?php echo .$row['Fathername']; ?></td>
+							<td> <?php echo .$row['age']; ?></td>
+							<td> <?php echo .$row['gender']; ?></td>
+							<td> <?php echo .$row['email']; ?></td>
+						</tr>
+						<tr>
+							<td>sudh</td>
+							<td>hanu</td>
+							<td>20</td>
+							<td>m</td>
+							<td>sudh@gmail.com</td>
+						</tr>
+						<tr>
+							<td>rag</td>
+							<td>ven</td>
+							<td>20</td>
+							<td>m</td>
+							<td>rag@gmail.com</td>
+						</tr>
+						<tr>
+							<td>gani</td>
+							<td>vinayaka</td>
+							<td>20</td>
+							<td>m</td>
+							<td>gani@gmail.com</td>
+						</tr>
+
+						<?php
+					}
+				}
+				?>
+			</table>
+		</div>
+	</center>
+
+</body>
+</html>

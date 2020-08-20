@@ -1,0 +1,14 @@
+h1{
+	font-family:"TimesNewRoman",Times,serif;
+}
+table,th,td{
+	border: 1px solid black;
+}
+.cls1{
+	padding-left: 200px;
+	
+}
+.cls2{
+	padding: 3px 10px 3px 10px;
+	border-radius: 20px;
+}

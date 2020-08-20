@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- w3 school navbar right aligned-->
+	 <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.m in.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+
+</head>
+<body background="44.jpeg">
+		<!--navbar-->
+	<nav class="navbar navbar-inverse">
+		<div class="w3-top w3-hide-small">
+  
+ 		 <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+
+    		<a href="boot.html" class="w3-bar-item w3-button">HOME</a>
+	    	
+	    	
+	   		<ul class="nav navbar-nav navbar-right">
+		      <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		    </ul>
+	  		</div>
+		</div>
+		  
+		</nav>
+		<!--login-->
+		
+			<div class="div1">
+	       	 <center><h1>Login Here</h1></center>
+	        <form action="valid.php" method="post">
+	            <p>Username</p>
+	            <input type="text" name="username" placeholder="Enter Username">
+	            <p>Password</p>
+	            <input type="password" name="password" placeholder="Enter Password"><br><br>
+	            <center><input type="submit" name="" value="Login"></center>
+	          
+	        </form>
+	       </div>
+	         <!--signup-->
+	   		 <div class="div2">
+	       	 <center><h1>Register here</h1></center>
+	        <form action="registration.php" method="POST">
+	            <p>Name</p>
+	            <input type="text" name="name" placeholder="Enter name" required><br>
+
+
+
+	            <p>Father Name</p>
+	            <input type="text" name="Fathername" placeholder="Enter Father name" required>
+
+
+	            <p>Date Of Birth</p>
+	            <input type="date" name="DOB">
+	            <p>Age</p>
+	            <input type="text" name="age" placeholder="Enter Age" required>
+	            <p>Gender</p>
+	            <input type="radio" name="gender" value="m">Male
+	            <input type="radio" name="gender" value="f">Female
+	            <p>Email</p>
+	            <input type="email" name="email" required>
+
+	            
+
+	            <br><br>
+
+	           
+	            <center><input type="submit" name="" value="Register"></center>
+	          
+	        </form>
+	       </div>
+	   
+</body>
+</html>
